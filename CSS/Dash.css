@@ -388,7 +388,7 @@ right: 0;
     }
 
     .dashTitle p{
-        font-size: 20px;
+        font-size: 17px;
     }
     
     .button{
@@ -661,6 +661,16 @@ right: 0;
     width: 100%;
 }
 
+@media (max-width:500px) {
+    .planTitle {
+      
+        font-size: 15px;
+        height: 40px;
+        width: 100%;
+    }
+    
+}
+
 .basicInfo{
     height: 300px;
     width: 90%;
@@ -804,6 +814,29 @@ right: 0;
 
 .listName p{
     font-size: 12px;
+}
+
+@media (max-width:500px) {
+    .listName{
+        width: 300px;
+         font-family: var(--priceTxt);
+         padding-top: 20px;
+         padding-left: 10px;
+     }
+     
+     .listName h5{
+         font-size: 12px;
+     }
+     
+     .listName p{
+         font-size: 10px;
+     }
+
+     .listImg{
+        width: 300px;
+     }
+
+    
 }
 
 .priceList{
