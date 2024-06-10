@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+    --logoTxt: "Lexend", sans-serif;
+    --productTxt: "Carter One", system-ui;
+    --colorPrimary: #ffffff;
+    --colorTxt: #000000;
+    --colorBtn: rgb(102, 45, 226);
+    --manrope:"Manrope", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(227, 227, 227);
+}
+
+/* -------------------H E A D E R  S E C T I O N ----------------- */
+
+.header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60px;
+    background-color: var(--colorTxt);
+    font-family: var(--logoTxt);
+    position: fixed;
+    top: 0;
+}
+
+.leftSide {
+    display: flex;
+    align-items: center;
+    color: var(--colorPrimary);
+    padding-left: 20px;
+}
+
+.leftSide h4 {
+    text-indent: 5px;
+}
+
+.leftSide img {
+    width: 40px;
+}
+
+.centerNav {
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+
+.centerNav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.centerNav ul li {
+    list-style-type: none;
+}
+
+.centerNav ul li a {
+    text-decoration: none;
+    color: var(--colorPrimary);
+    font-size: 14px;
+}
+
+.centerNav i {
+    color: var(--colorPrimary);
+}
+
+.navCon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.navCon:hover {
+    border: 3px solid var(--colorPrimary);
+    color: var(--colorTxt);
+}
+
+.rightSide {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.rightSide svg {
+    display: flex;
+}
+
+@media screen and (max-width: 1000px) {
+    .centerNav {
+        display: none;
+    }
+
+}
+
+.sideBar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 300px;
+    z-index: 10;
+    background-color: #ffffff;
+    box-shadow: -10px 0 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    right: -420px;
+    transition: right 0.3s ease;
+}
+
+.sideBar.open {
+    right: 0;
+}
+
+.sideBar li {
+    list-style-type: none;
+}
+
+.sideBar a {
+    text-decoration: none;
+    color: var(--colorTxt);
+}
+
+.sideCon {
+    padding: 20px;
+}
+
+.sideCon:hover {
+    border-left: 6px solid var(--colorBtn);
+    color: var(--colorBtn);
+    width: 100%;
+    margin: 0;
+}
+
+.displayName {
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    padding-left: 20px;
+    width: 100%;
+    padding-top: 10px;
+}
+
+#sideLogo {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    font-family: var(--logoTxt);
+    width: 100%;
+}
+
+#sideLogo a {
+    font-weight: bolder;
+}
+
+#sideLogo img {
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+}
+
+.privaacyPolicy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 450px;
+    padding-left: 10px;
+    width: 100%;
+    text-align: center;
+    
+}
+
+
+.privaacyPolicy a{
+    color: var(--colorBtn);
+}
+
+.home {
+    padding-right: 20px;
+}
+
+/* ------------------- W R A P P E R  S E C T I O N ------------------- */
+
+.wrapper {
+    max-width: 1500px;
+    padding-top: 80px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: var(--colorPrimary);
+    align-items: center;
+}
+
+.bannerCon {
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 1500px;
+    width: 100%;
+}
+
+.bannerLeft, .bannerRight {
+    flex-basis: 48%;
+    margin: 10px 0;
+}
+
+@media (max-width: 800px) {
+    .bannerLeft, .bannerRight {
+        flex-basis: 100%;
+    }
+}
+
+.leftBanCon {
+    font-family: var(--logoTxt);
+    box-sizing: border-box;
+    text-align: center;
+    padding: 8px;
+}
+
+#leftCon2 p {
+    color: red;
+}
+.bannerLeft{
+    background-color: #d1c4e9;
+    border: 1px solid #311b92;
+    border-radius: 8px;
+}
+.bannerRight{
+    padding: 10px;
+}
+.bannerRight input {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 5px;
+    height: 100%;
+}
+.bannerRight textarea {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 5px;
+    height: 100%;
+}
+
+.bannerRight label {
+    text-align: left;
+    padding: 8px;
+    padding-top: 70px;
+}
+
+#btnSend {
+    width: 120px;
+    height: 30px;
+    background: #6D31EDFF;
+    border: none;
+    padding: 0 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#btnSend:hover {
+    color: #FFFFFFFF;
+    background: #5113D7FF;
+}
+
+#btnSend:active {
+    color: #FFFFFFFF;
+    background: #3F0EA6FF;
+}
+
+.footer {
+    clear: both;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    max-width: 1500px;
+    width: 100%;
+    margin: 80px 0 10px 0;
+}
+
+.footer p {
+    font-weight: bold;
+}
+
+.footer img {
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 800px) {
+    .footer {
+        flex-basis: 100%;
+    }
+}
+
+
+
+/* -------------------------------------------------- L O G I N  S E C T I O N ------------------------------------------------------ */
+
+.loginHeader{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.loginHeader h1{
+    font-family: var(--logoTxt);
+    font-size: 60px;
+}
+
+.loginHeader p{
+    font-family: var(--manrope);
+}
+
+.formSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    flex-wrap: wrap;
+
+}
+
+.formSection label{
+    font-size: 14px;
+    font-weight: bold;
+    font-family: var(--manrope);
+
+}
+
+.formSection input{
+    display: flex;
+    flex-wrap: wrap;
+    height: 50px;
+    width: 400px;
+    border: none;
+    background-color: rgba(211, 211, 211, 0.212);
+    text-indent: 20px;
+    border-radius: 10px;
+
+}
+
+.formSection a{
+    text-decoration: none;
+    color: var(--colorBtn);
+    text-align: right;
+    font-family: var(--manrope);
+    font-size: 13px;
+}
+
+.button{
+    margin-top: 10px;
+    height: 60px;
+ max-width: 400px;
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.formSection button{
+    height: 50px;
+   max-width: 300px;
+   width: 100%;
+    border: none;
+    color: white;
+    background-color: var(--colorBtn);
+    border-radius:  10px;
+}
+
+.lowerForm{
+   width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.lowerForm p{
+    margin-bottom: 10px;
+    font-family: var(--manrope);
+    font-size: 13px
+}
+
+.lowerCon{
+    flex-wrap: wrap;
+    height: 110px;
+     max-width:600px;
+     width: 100%;
+     display: flex;
+     align-items: last baseline;
+     justify-content: center;
+     padding-bottom: 40px;
+     margin-bottom: 200px;
+}
+
+.lowerCon p{
+    font-family: var(--manrope);
+    font-size: 14px;
+}
+
+.lowerCon span a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--colorBtn);
+}
+
+@media (max-width:1000px) {
+    .formSection{
+        padding: 5px;
+        height: 410px;
+    }
+    .loginHeader h1{
+        font-family: var(--logoTxt);
+        font-size: 40px;
+    }
+    
+    .loginHeader p{
+        font-family: var(--manrope);
+        font-size: 15px;
+    }
+    
+    .formSection label{
+        font-size: 12px;
+    }
+    .formSection input{
+      
+        height: 40px;
+        width: 300px;
+        border: none;
+        
+    
+    }
+    .button{
+        height: 60px;
+    }
+
+    .button button{
+        height: 40px;
+        width: 230px;
+    }
+
+    .lowerForm p{
+        margin-bottom: 0;
+        font-family: var(--manrope);
+        font-size: 10px
+    }
+
+    .lowerForm img{
+        height: 30px;
+        width: 80px;
+    }
+
+    .lowerCon{
+        height: 50px;
+
+    }
+    .lowerCon p{
+        font-family: var(--manrope);
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Lexend:wght@100..900&display=swap');
+
+:root{
+    --logoTxt:"Lexend", sans-serif;
+    --productTxt:"Carter One", system-ui;
+    --colorPrimary:#ffffff;
+    --colorTxt:#000000;
+    --colorBtn:rgb(102, 45, 226);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color:rgb(227, 227, 227);
+}
+
+
+/* -------------------H E A D E R  S E C T I O N ----------------- */
+
+.header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60px;
+    background-color: var(--colorTxt);
+    font-family: var(--logoTxt);
+    position: fixed;
+
+   
+}
+
+.leftSide{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: var(--colorPrimary);
+    padding-left: 20px;
+}
+
+.leftSide h4{
+    text-indent: 5px;
+}
+
+.leftSide img{
+    width: 40px;
+}
+
+
+.centerNav{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;  
+}
+
+@media screen and (max-width: 1000px) {
+    #centerNav {
+        display: none;
+    }
+}
+
+.centerNav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.centerNav ul li{
+    display: inline-block;
+    list-style-type: none;
+  
+}
+
+.centerNav ul li a{
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    color: var(--colorPrimary);
+    text-indent: 5px;
+}
+
+.centerNav i{
+    color: var(--colorPrimary);
+}
+
+.navCon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 60px;
+    width: 120px;
+    
+}
+
+.navCon:hover{
+    border:3px solid var(--colorPrimary);
+    color: var(--colorTxt);
+    z-index: 0;
+
+}
+
+.rightSide{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+    width: 100%;
+}
+
+.rightSide svg{
+    display: none;
+}
+
+@media screen and (max-width:1000px) {
+    .rightSide svg{
+        display: flex;
+    }
+    
+}
+
+.sideBar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 300px;
+    z-index: 10;
+    background-color: #ffffff;
+    box-shadow: -10px 0 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    right: -420px;
+    transition: right 0.3s ease;
+}
+
+
+.sideBar.open {
+right: 0;
+}
+  
+
+.sideBar li{
+    list-style-type: none;
+}
+
+.sideBar a{
+    text-decoration: none;
+    color: var(--colorTxt);
+}
+
+.sideCon{
+    padding: 20px;
+}
+
+
+.sideCon:hover{
+    border-left: 6px solid var(--colorBtn);
+    color: var(--colorBtn);
+    width: 100%;
+    margin: 0;
+}
+
+.displayName{
+    display: flex;
+    flex-direction: column;
+    display: inline-block;
+    height: 60px;
+    padding-left: 20px;
+    width: 100%;
+    padding-top: 10px;
+    
+}
+
+#sideLogo{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    font-family: var(--logoTxt);
+    width: 100%;
+
+}
+
+#sideLogo a{
+    font-weight: bolder;
+
+}
+#sideLogo img{
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+   
+}
+
+.privaacyPolicy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 450px;
+    padding-left: 10px;
+    width: 100%;
+    text-align: center;
+    
+}
+
+
+.privaacyPolicy a{
+    color: var(--colorBtn);
+}
+
+.home{
+    padding-right: 20px;
+}
+
+/* ------------------- W R A P P E R  S E C T I O N ------------------- */
+
+.wrapper {
+    max-width: 1500px;
+    padding-top: 80px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: var(--colorPrimary);
+    align-items: center;
+}
+.bannerCon{
+    gap: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    align-items: justify;
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    padding-bottom: 50px;
+}
+.bannerCon p{
+    padding: 10px;
+    text-align: justify-all;
+}
+.subheader{
+    font-family: monrope,sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 8px;
+}
+#subheader1 p {
+    padding-top: 40px;
+}
+.notif p{
+    box-sizing: border-box;
+    background-color: lightskyblue;
+    text-align: justify;
+    padding: 15px;
+}
