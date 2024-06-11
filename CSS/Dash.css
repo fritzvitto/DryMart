@@ -308,13 +308,13 @@ right: 0;
     display: flex;
     margin-top: 30px;
     height: 200px;
-    max-width: 1200px;
+    max-width: 300px;
     width: 100%;
 
 }
 
 .Section{
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -654,7 +654,7 @@ right: 0;
 }
 
 .planTitle {
-    border: 2px solid balck;
+    border: 2px solid black;
     font-family: var(--logoTxt);
     font-size: 20px;
     height: 40px;
