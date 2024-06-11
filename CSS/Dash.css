@@ -796,7 +796,7 @@ right: 0;
 }
 
 .listImg img{
-    width: 300px;
+    width: 100px;
     height: 100%;
     overflow: hidden;
 }
@@ -835,6 +835,10 @@ right: 0;
      .listImg{
         width: 300px;
      }
+
+    .listImg img{
+        width:150px;
+    }
 
     
 }
